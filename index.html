@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Girlfriend's Day ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div id="hearts-bg"></div>
+
+<!-- ================= WELCOME ================= -->
+
+<section class="page active" id="welcome">
+
+<div class="glass">
+
+<h2 class="title">
+Happy Girlfriend's Day
+</h2>
+
+<h1 class="love-title">
+My Love ❤️
+</h1>
+
+<p class="intro">
+
+I made something special for you.
+
+Not because today is the only day you deserve appreciation...
+
+But because you deserve to smile every single day.
+
+So sit back...
+
+Relax...
+
+And let me take you on a little journey.
+
+</p>
+
+<button class="btn" onclick="nextPage('letter')">
+Open My Heart ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= LETTER ================= -->
+
+<section class="page" id="letter">
+
+<div class="glass">
+
+<h2>A Letter For You 💌</h2>
+
+<p id="typewriter"></p>
+
+<button class="btn" onclick="nextPage('reasons')">
+Continue ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= REASONS ================= -->
+
+<section class="page" id="reasons">
+
+<div class="glass">
+
+<h2>Reasons You're Amazing 🌹</h2>
+
+<div class="cards">
+
+<div class="card">
+❤️ Your smile can brighten even the darkest day.
+</div>
+
+<div class="card">
+🌸 Your kindness makes people feel at home.
+</div>
+
+<div class="card">
+✨ You're beautiful inside and out.
+</div>
+
+<div class="card">
+💖 You deserve every happiness in this world.
+</div>
+
+<div class="card">
+🌙 Thank you for simply being you.
+</div>
+
+</div>
+
+<button class="btn" onclick="nextPage('gift')">
+One More Surprise 🎁
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= GIFT ================= -->
+
+<section class="page" id="gift">
+
+<div class="glass">
+
+<div class="gift-box" onclick="openGift()">
+
+🎁
+
+</div>
+
+<h2 id="giftText">
+
+Tap the gift to open it.
+
+</h2>
+
+<button
+class="btn hidden"
+id="giftBtn"
+onclick="nextPage('gameIntro')">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= GAME INTRO ================= -->
+
+<section class="page" id="gameIntro">
+
+<div class="glass">
+
+<h2>Mini Game ❤️</h2>
+
+<p>
+
+Before we continue...
+
+Let's play something fun.
+
+Catch the falling hearts.
+
+Every heart you catch is worth
+
+<b>10%</b>.
+
+You only have
+
+<b>20 seconds!</b>
+
+Ready?
+
+</p>
+
+<button
+class="btn"
+onclick="startGame()">
+
+Start Game ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- GAME SECTION STARTS IN PART 2 -->
+  <!-- ================= GAME ================= -->
+
+<section class="page" id="game">
+
+<div class="top-bar">
+
+<div id="score">
+❤️ Score: 0%
+</div>
+
+<div id="timer">
+⏳ 20s
+</div>
+
+</div>
+
+<div id="gameArea">
+
+<!-- Hearts will appear here -->
+
+</div>
+
+</section>
+
+<!-- ================= SCORE ================= -->
+
+<section class="page" id="scorePage">
+
+<div class="glass">
+
+<h2>Game Over ❤️</h2>
+
+<h1 id="finalScore">
+0%
+</h1>
+
+<p id="scoreMessage">
+
+</p>
+
+<button
+class="btn"
+onclick="nextPage('wish')">
+
+Continue 🌠
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= WISH ================= -->
+
+<section class="page" id="wish">
+
+<div class="glass">
+
+<h2>Make A Wish 🌠</h2>
+
+<p>
+
+Close your eyes...
+
+Take a deep breath...
+
+Make one beautiful wish.
+
+I truly hope it comes true. ❤️
+
+</p>
+
+<button
+class="btn"
+onclick="nextPage('final')">
+
+Done ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section class="page" id="final">
+
+<div class="glass final-card">
+
+<div class="big-heart">
+
+❤️
+
+</div>
+
+<h1>
+
+Happy Girlfriend's Day
+
+</h1>
+
+<h2>
+
+My Love ❤️
+
+</h2>
+
+<p>
+
+Thank you for taking the time to go through this little surprise.
+
+I know it's just a website...
+
+But every click,
+
+every animation,
+
+every word,
+
+was made with you in mind.
+
+I hope this brought a smile to your face.
+
+You deserve happiness,
+
+peace,
+
+love,
+
+and countless beautiful memories.
+
+Never forget how amazing you are.
+
+❤️
+
+</p>
+
+<button
+class="btn"
+onclick="celebrate()">
+
+One Last Tap ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= CELEBRATION ================= -->
+
+<div id="celebration">
+
+<h1>
+
+❤️
+
+</h1>
+
+<h2>
+
+Happy Girlfriend's Day
+
+</h2>
+
+<h3>
+
+My Love ❤️
+
+</h3>
+
+<p>
+
+No matter how many words I write...
+
+You'll always be worth more than I could ever fit inside a website.
+
+Thank you for being you.
+
+❤️
+
+</p>
+
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
