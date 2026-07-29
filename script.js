@@ -29,19 +29,7 @@ But every word here was written with a smile.
 
 Thank you for being someone who makes life brighter.
 
-Your kindness...
-
-Your smile...
-
 Your beautiful heart...
-
-All of them deserve to be celebrated.
-
-I hope today reminds you just how amazing you truly are.
-
-And whenever life gets difficult...
-
-Never forget that you're appreciated more than words can explain.
 
 Happy Girlfriend's Day,
 
@@ -103,7 +91,7 @@ document.getElementById("giftBtn").classList.remove("hidden");
 
 let score = 0;
 
-let seconds = 20;
+let seconds = 30;
 
 let timer;
 
@@ -115,7 +103,7 @@ nextPage("game");
 
 score = 0;
 
-seconds = 20;
+seconds = 30;
 
 updateScore();
 
@@ -126,7 +114,7 @@ const area = document.getElementById("gameArea");
 
 area.innerHTML="";
 
-spawn = setInterval(createHeart,500);
+spawn = setInterval(createHeart,700);
 
 timer = setInterval(()=>{
 
@@ -168,7 +156,7 @@ Math.random()*90+"vw";
 heart.style.animationDuration =
 (3+Math.random()*2)+"s";
 
-heart.onclick=function(){
+function catchHeart(){
 
 score+=10;
 
@@ -177,6 +165,9 @@ updateScore();
 heart.remove();
 
 };
+   
+heart.addEventListener('touchstart',catchHeart);
+heart.addEventListener('click',catchHeart);
 
 area.appendChild(heart);
 
