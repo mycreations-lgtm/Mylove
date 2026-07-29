@@ -319,6 +319,9 @@ animation:fall linear forwards;
 filter:drop-shadow(0 0 10px rgba(255,100,150,.8));
 
 transition:.2s;
+   
+touch-action: manipulation; /* NEW - kills delay */
+-webkit-tap-highlight-color: transparent; /* NEW - removes gray flash */  
 
 }
 
